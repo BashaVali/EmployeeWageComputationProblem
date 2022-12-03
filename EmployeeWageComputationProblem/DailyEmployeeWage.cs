@@ -9,7 +9,7 @@ namespace EmployeeWageComputationProblem
 {
     public class EmployeeWageProblem1
     {
-        // class variable // UC-1
+        // class variable 
         public const int Per_hour = 20;
         public const int Full_Day_Hour = 8;
         public const int Part_Time_Hour = 4;
