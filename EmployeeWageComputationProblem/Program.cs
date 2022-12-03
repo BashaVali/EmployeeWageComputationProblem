@@ -18,16 +18,21 @@ namespace EmployeeWageComputationProblem
 
                 Console.WriteLine(" Select the option ");
 
-                Console.WriteLine("1.Attendance" + "\n" +                                
-                                  "2.Exit" + "\n");
+                Console.WriteLine("1.Attendance" + "\n" +
+                                  "2.DailyEmployeeWage" + "\n" +
+                                  "3.Exit" + "\n");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
                     case 1:
                         EmployeeWageProblem employeeWageProblem = new EmployeeWageProblem();
                         employeeWageProblem.EmployeeAttendence();
-                        break;                    
+                        break;
                     case 2:
+                        EmployeeWageProblem1 employeeWageProblem1= new EmployeeWageProblem1();
+                        employeeWageProblem1.DailyEmployeeWage();
+                        break;
+                    case 3:
                         flag = false;
                         break;
                 }
