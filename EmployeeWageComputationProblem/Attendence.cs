@@ -8,12 +8,13 @@ namespace EmployeeWageComputationProblem
 {
     public class EmployeeWageProblem
     {
-        // class variable // UC-1
+        // class variable 
         public const int Per_hour = 20;
         public const int Full_Day_Hour =8 ;
         public const int Part_Time_Hour =4;
         public const int Wage_per_Hour = 20;
         Random random = new Random();
+        // UC-1
         public void EmployeeAttendence()
         {
             Random random = new Random();
