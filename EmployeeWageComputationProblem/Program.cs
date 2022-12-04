@@ -21,9 +21,10 @@ namespace EmployeeWageComputationProblem
                 Console.WriteLine("1.Attendance" + "\n" +
                                   "2.DailyEmployeeWage" + "\n" +
                                   "3.PartTimeEmployeeWage" + "\n" +
-                                  "4.SwitchCaseStatement"+ "\n" +
+                                  "4.SwitchCaseStatement" + "\n " +
                                   "5.MonthWages" + "\n" +
-                                  "6.Exit" + "\n");
+                                  "6.TotalMonthlyWorkingHours" + "\n" +
+                                  "7.Exit" + "\n");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -43,11 +44,15 @@ namespace EmployeeWageComputationProblem
                         SwitchCaseStatement switchCaseStatement = new SwitchCaseStatement();
                         switchCaseStatement.SwitchCase();
                         break;
-                    case 5:
+                    case 5: 
                         MonthWages monthWages = new MonthWages();
                         monthWages.MonthlyEmployeeWage();
                         break;
                     case 6:
+                        TotalMonthlyWorkingHours totalMonthlyWorkingHours = new TotalMonthlyWorkingHours();
+                        totalMonthlyWorkingHours.TotalMonthlyWages();
+                        break;
+                    case 7:
                         flag = false;
                         break;
                 }
@@ -58,3 +63,29 @@ namespace EmployeeWageComputationProblem
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
