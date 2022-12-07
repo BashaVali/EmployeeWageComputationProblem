@@ -31,7 +31,7 @@ namespace EmployeeWageComputationProblem
                                   
                int options = Convert.ToInt32(Console.ReadLine());                       
                switch (options)
-                {
+               {
                     case IS_PART_TIME:
                         empHrs = 4;
                         break;
@@ -42,7 +42,7 @@ namespace EmployeeWageComputationProblem
                         empHrs = 0;
                         break;
                     
-                }
+               }
 
                 totalEmpHrs += empHrs; 
                 Console.WriteLine("Day#" + totalWorkingDays + " Emp Hrs  :" + empHrs);

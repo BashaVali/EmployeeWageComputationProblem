@@ -25,7 +25,8 @@ namespace EmployeeWageComputationProblem
                                   "5.MonthWages" + "\n" +
                                   "6.TotalMonthlyWorkingHours" + "\n" +
                                   "7.RefactorEmployeeWageClass" + "\n "+
-                                  "8.Exit" + "\n");
+                                  "8.EmployeeWageMultipleCompanies"+ "\n " +
+                                  "9.Exit" + "\n");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -57,7 +58,17 @@ namespace EmployeeWageComputationProblem
                         RefactorEmployeeWageClassMethod refactorEmployeeWageClassMethod = new RefactorEmployeeWageClassMethod();
                         refactorEmployeeWageClassMethod.RefactorEmployeeWageClass();
                         break;
-                    case 8:
+                        case 8:
+                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies = new EmployeeWageMultipleCompanies();
+                        employeeWageMultipleCompanies.EmpWages("Accenture");
+                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies1 = new EmployeeWageMultipleCompanies();
+                        employeeWageMultipleCompanies1.EmpWages("TCS");
+                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies2 = new EmployeeWageMultipleCompanies();
+                        employeeWageMultipleCompanies2.EmpWages("CapGemini");
+                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies3= new EmployeeWageMultipleCompanies();
+                        employeeWageMultipleCompanies3.EmpWages("Wipro");
+                        break;
+                    case 9:
                         flag = false;
                         break;
                 }
