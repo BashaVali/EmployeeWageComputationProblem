@@ -1,4 +1,5 @@
-﻿using System;
+﻿using EmployeeWages;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -59,14 +60,13 @@ namespace EmployeeWageComputationProblem
                         refactorEmployeeWageClassMethod.RefactorEmployeeWageClass();
                         break;
                         case 8:
-                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies = new EmployeeWageMultipleCompanies();
-                        employeeWageMultipleCompanies.EmpWages("Accenture");
-                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies1 = new EmployeeWageMultipleCompanies();
-                        employeeWageMultipleCompanies1.EmpWages("TCS");
-                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies2 = new EmployeeWageMultipleCompanies();
-                        employeeWageMultipleCompanies2.EmpWages("CapGemini");
-                        EmployeeWageMultipleCompanies employeeWageMultipleCompanies3= new EmployeeWageMultipleCompanies();
-                        employeeWageMultipleCompanies3.EmpWages("Wipro");
+                        Console.WriteLine("Welcome to employee wage computation");
+                        EmployeeWageMultipleCompany employeeWageMultipleCompany = new EmployeeWageMultipleCompany();
+                        employeeWageMultipleCompany.ComputeWage("Accenture", 60, 50, 90);
+                        EmployeeWageMultipleCompany employeeWageMultipleCompany1 = new EmployeeWageMultipleCompany();
+                        employeeWageMultipleCompany1.ComputeWage("TCS", 65, 55, 95);
+                        EmployeeWageMultipleCompany employeeWageMultipleCompany2 = new EmployeeWageMultipleCompany();
+                        employeeWageMultipleCompany2.ComputeWage("CapGemini", 70, 75, 100);
                         break;
                     case 9:
                         flag = false;
