@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace EmployeeWageComputationProblem
 {
-    public class Program
+    public class Programs
     {
         public static void Main(string[] args)
         {
@@ -27,7 +27,8 @@ namespace EmployeeWageComputationProblem
                                   "6.TotalMonthlyWorkingHours" + "\n" +
                                   "7.RefactorEmployeeWageClass" + "\n "+
                                   "8.EmployeeWageMultipleCompanies"+ "\n " +
-                                  "9.Exit" + "\n");
+                                  "9.TotalWageForEachCompany"+"\n"+
+                                  "10.Exit" + "\n");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -69,6 +70,15 @@ namespace EmployeeWageComputationProblem
                         employeeWageMultipleCompany2.ComputeWage("CapGemini", 70, 75, 100);
                         break;
                     case 9:
+
+                        TotalWageForEachCompany program = new TotalWageForEachCompany();
+                        program.EmployeeWage("Infosys", 80, 12, 90);
+                        program.ComputeWage();
+                        TotalWageForEachCompany wipro = new TotalWageForEachCompany();
+                        wipro.EmployeeWage("TCS", 55, 22, 110);
+                        wipro.ComputeWage();
+                        break;
+                    case 10:
                         flag = false;
                         break;
                 }
